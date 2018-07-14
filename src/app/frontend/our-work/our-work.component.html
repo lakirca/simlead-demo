@@ -1,0 +1,57 @@
+<!--=== Navigation menu starts ===-->
+<app-nav></app-nav>
+<div class="holder"></div>
+<!--=== Navigation menu ends ===-->
+<!-- Portfolio section starts -->
+<section id="portfolio">
+  <div class="container ">
+    <div class="row ">
+      <div class="title ">
+        <h1 class="text-center ">Our
+          <span class="theme_bolder">works</span>
+        </h1>
+      </div>
+      <div class="line"></div>
+    </div>
+    <div class="row">
+      <div class="row portfolio-list ">
+        <div class="col-md-4 col-xs-6 work" *ngFor="let article of articleList">
+          <img class="img-responsive" src="{{article.url}}">
+          <div class="overlay"></div>
+          <div class="work-content">
+            <span>{{article.skills}}</span>
+            <h3>{{article.title}}</h3>
+            <div class="work-link">
+              <a [routerLink]="['/article', article.$key]">
+                <i class="fa fa-external-link "></i>
+              </a>
+              <a [routerLink]="['/our_work', article.$key]" class="lightbox">
+                <i class="fa fa-search "></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="paginator">
+        <button class="prev" (click)="prevPage()" [disabled]="!prevKeys?.length">
+          <a class="btn btn-lg" style="font-size: 40px;">
+            <i class="fa fa-arrow-left" style=" color: #02aab0;"></i>
+
+          </a>
+        </button>
+        <button class="next" (click)="nextPage()" [disabled]="!nextKey?.length">
+          <a class="btn btn-lg" style="font-size: 40px;">
+            <i class="fa fa-arrow-right" style=" color: #02aab0;"></i>
+
+          </a>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Contact section starts -->
+<app-mail></app-mail>
+<!-- Footer section starts -->
+<app-footer></app-footer>
+<!-- Footer section ends -->

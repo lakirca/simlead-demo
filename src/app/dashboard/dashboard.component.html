@@ -1,0 +1,27 @@
+<app-navbar></app-navbar>
+<div class="container">
+
+    <div class="myContainer">
+        <div class="myRow">
+            <div class="text-center">
+                <h2 class="jumbotron">Articles</h2>
+            </div>
+            <div class="floatDiv" *ngFor="let article of articleList">
+                <div class="article">
+                    <a>
+                        <img src="{{article.url}}" class="tn">
+                        <h2>
+                            <b>{{article.title}}</b>
+                        </h2>
+                    </a>
+                    <a class="btn" [routerLink]="['/articles', article.$key]">
+                        <i class="fa fa-pencil-square-o"> Edit</i>
+                    </a>
+                    <a class="btn right" (click)="onDelete(article)">
+                        <i class="fa fa-trash-o"> Delete</i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

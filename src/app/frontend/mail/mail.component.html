@@ -1,0 +1,40 @@
+<section id="contactus">
+  <div class="container">
+    <div class="row">
+      <div class="title">
+        <h2 class="text-center">CONTACT
+          <span class="theme_bolder">US</span>
+        </h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <form (ngSubmit)="onSubmit(f)" #f="ngForm" class="form-horizontal">
+          <div class="form-group">
+            <div class="col-sm-6">
+              <input type="text" class="form-control mob_control" id="form3" ngModel name="name" required placeholder="Name" mdbActive>
+            </div>
+            <div class="col-sm-6">
+              <input type="email" class="form-control" mbdActive id="form2" required placeholder="Email" ngModel #email="ngModel" name="email" mdbActive>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input class="form-control" type="text" id="form32" required placeholder="Subject" class="form-control" ngModel name="subject" mdbActive />
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-12">
+              <textarea class="form-control" type="text" id="form32" required class="form-control" ngModel name="content" mdbActive></textarea>
+            </div>
+          </div>
+          <div class="row" style="color: white">
+            <div class="col-sm-12 text-center mb30">
+              <button class="btn theme_btn" type="submit">Send Message</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

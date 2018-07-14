@@ -1,0 +1,27 @@
+.wrapper {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 100px;
+  background: #0b0b0b;
+  opacity: 0.9;
+}
+.imgDiv {
+  margin: 0 auto;
+  width: 600px;
+  height: 680px;
+}
+.img-container {
+  height: 680px;
+  width: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-content: center;
+  background-size: 600px 680px;
+  marigin-bottom: 100px;
+}
+.close {
+  background-color: transparent;
+  border: transparent;
+  margin:20px 30% 20px 0;
+  color: white;
+}

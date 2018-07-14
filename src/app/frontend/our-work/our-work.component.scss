@@ -1,0 +1,113 @@
+.hidden {
+  line-height: 0;
+}
+a::after {
+  content: "" !important;
+}
+
+.navbar .navbar-fixed-top .default .top-nav-collapse {
+  background-color: #00cdac;
+}
+
+.navbar .navbar-fixed-top .default .top-nav-collapse {
+  background-color: #00cdac;
+}
+.navbar .default .navbar-fixed-top {
+  background-color: #00cdac;
+}
+nav {
+  background-color: #00cdac;
+}
+
+.title h2:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 90px;
+  height: 1px;
+  background-color: #666666;
+  margin: auto;
+}
+.col-md-4 .col-xs-6 .work {
+  width: 400px;
+  height: 401.7px;
+}
+img.img-responsive {
+  width: 360px;
+  height: 361.7px;
+}
+.overlay {
+  width: 400px;
+  height: 401.7px;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+button.prev {
+  background-color: transparent;
+  border: 0;
+}
+button.next {
+  background-color: transparent;
+  border: 0;
+}
+
+.paginator {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.holder {
+  height: 68px;
+  background-color: #00cdac;
+}
+h2.text-center {
+  border-bottom: 1px solid #404040;
+}
+
+.line {
+  margin-left: 38%;
+  margin-right: 38.5%;
+  border-bottom: 1px solid #404040;
+  margin-bottom: 100px;
+}
+
+.lightbox {
+  color: white;
+  margin: 3px;
+}
+
+.theme_bolder {
+  font-weight: 600;
+  color: #00cdac;
+}
+#portfolio {
+  padding-top: 30px;
+  background-image: url("../../../assets/images/custom/diagonal.png");
+}
+.title {
+  margin-bottom: 50px;
+}
+
+.title h2:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 90px;
+  height: 1px;
+  background-color: #666666;
+  margin: auto;
+}

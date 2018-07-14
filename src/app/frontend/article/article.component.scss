@@ -1,0 +1,285 @@
+.lightbox {
+  color: white;
+  margin: 3px;
+}
+
+.theme_bolder {
+  font-weight: 600;
+  color: #00cdac;
+}
+* {
+  ::selection {
+    background-color: #6195ff;
+    color: #fff;
+  }
+
+  .button-div {
+    float: left;
+    margin-left: 41%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .main-btn[_ngcontent-c8] {
+    background: linear-gradient(-90deg, #01ccdf, #00cdac);
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    text-transform: uppercase;
+    background-color: transparent;
+    border-radius: 30px;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: all ease-in 0.3s;
+  }
+
+  .title h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 90px;
+    height: 1px;
+    background-color: #666666;
+    margin: auto;
+  }
+
+  .main-btn[_ngcontent-c8]:hover {
+    background: #23d1b7;
+    border: 1px solid #23d1b7;
+  }
+
+  .hidden {
+    line-height: 0;
+  }
+
+  a::after {
+    content: "" !important;
+  }
+
+  .hidden {
+    line-height: 0;
+  }
+  a::after {
+    content: "" !important;
+  }
+  .portfolio-info .title h1 {
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #404040;
+    padding-bottom: 0;
+    margin-bottom: 5px;
+  }
+  .title h1,
+  .title h2 {
+    font-weight: 300;
+    color: #666;
+    font-size: 30px;
+    position: relative;
+    padding-bottom: 30px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+  }
+  .initialism,
+  .theme_btn,
+  .title h1,
+  .title h2 {
+    text-transform: uppercase;
+  }
+
+  h1 {
+    margin: 0;
+  }
+  h1 {
+    font-size: 60px;
+    font-weight: 300;
+    color: #fff;
+  }
+  .h1,
+  h1 {
+    font-size: 36px;
+  }
+  .h1,
+  .h2,
+  .h3,
+  h1,
+  h2,
+  h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+  }
+  h1 {
+    margin: 0.67em 0;
+  }
+  *,
+  :after,
+  :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  h1 {
+    font-size: 1.17em;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+  }
+  :-webkit-any(article, aside, nav, section) h1 {
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+  }
+  h1 {
+    display: block;
+    font-size: 2em;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+  }
+  .portfolio-info {
+    background-color: #fff;
+    text-align: center;
+  }
+  body {
+    font-family: Lato, sans-serif;
+    font-size: 20px;
+    overflow-x: hidden;
+    background-color: #fff;
+    position: relative;
+  }
+  body {
+    line-height: 1.42857143;
+    color: #333;
+  }
+  html {
+    font-size: 10px;
+  }
+  html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  .owl-carousel,
+  .owl-carousel .owl-item,
+  .owl-theme .owl-controls,
+  .slick-slider,
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+  *,
+  :after,
+  :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .portfolio-info .title h1::after {
+    display: none;
+  }
+  .title h1:after,
+  .title h2:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 90px;
+    height: 1px;
+    background-color: #666;
+    margin: auto;
+  }
+  *,
+  :after,
+  :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .website {
+    font-size: 15px;
+  }
+
+  .portfolio-info .skills {
+    color: #02aab0;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+
+  .navbar .navbar-fixed-top .default .top-nav-collapse {
+    background-color: #00cdac;
+  }
+
+  .navbar .navbar-fixed-top .default .top-nav-collapse {
+    background-color: #00cdac;
+  }
+  .navbar .default .navbar-fixed-top {
+    background-color: #00cdac;
+  }
+  nav {
+    background-color: #00cdac;
+  }
+  #portfolio {
+    padding-top: 100px;
+    background-color: #fff;
+  }
+  .title {
+    margin-bottom: 50px;
+  }
+
+  .title h2:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 90px;
+    height: 1px;
+    background-color: #666666;
+    margin: auto;
+  }
+  .col-md-4 .col-xs-6 .work {
+    width: 401.7px;
+    height: 401.7px;
+  }
+  img.img-responsive {
+    width: 360px;
+    height: 361.7px;
+  }
+  .overlay {
+    width: 100%;
+    height: 401.7px;
+  }
+
+  #portfolio {
+    padding-top: 100px;
+    background-image: url("../../../assets/images/custom/diagonal.png");
+  }
+}
+#articles {
+  background-color: #fff;
+}

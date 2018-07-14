@@ -1,0 +1,13 @@
+.img-responsive {
+  height: 63px;
+  width: 63px;
+  border-radius: 50px;
+}
+
+.client_detail span {
+  margin-right: 10px;
+}
+
+.light_bg_layer {
+  background: rgba(40, 41, 55, 0.7);
+}

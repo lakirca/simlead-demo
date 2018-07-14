@@ -1,0 +1,93 @@
+<nav class="navbar default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#" class="brand-logo">
+        <img src="../../../assets/images/custom/logo.png" alt="Theme_name">
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav pull-right">
+        <li>
+          <a routerLink="">Home</a>
+        </li>
+        <li>
+          <a routerLink="">Features</a>
+        </li>
+        <li>
+          <a routerLink="">Portfolio</a>
+        </li>
+        <li>
+          <a routerLink="">Testimonials</a>
+        </li>
+        <li>
+          <a href="#contactus">Contact us</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section id="portfolio_single" style="padding-top:100px">
+  <div class="container">
+
+    <article id="post-141" class="post-141 our_portfolio type-our_portfolio status-publish format-standard has-post-thumbnail hentry">
+      <div class="row portfolio-info">
+        <div class="col-md-6 col-sm-12">
+          <div class="custom-single-thumbnail-img">
+            <div class="overlay" [routerLink]="['/our_work', articleUrl]">
+              <img class="overlayImg" width="485" height="270" src="{{article?.url}}" />
+              <div class="custom-single-thumbnail-img-hover">
+                <a data-lightbox="group-unique" class="img-preview" alt="Preview" title="Preview">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 portfolio-info-data">
+          <div class="title">
+            <h1>{{article?.title}} </h1>
+          </div>
+          <div class="website">
+            {{article?.website}} </div>
+          <div class="skills">
+            {{article?.skills}} </div>
+          <div class="entry-content" style="word-wrap:break-word;">
+            <p>{{article?.body}} </p>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- #post-## -->
+  </div>
+</section>
+<br>
+<br>
+<br>
+<!-- Post section ends -->
+<section id="portfolio-more-works" id="home" class="hidden-xs">
+  <div class="container">
+    <div class="row">
+      <div class="title">
+        <h2 class="text-center">More of
+          <span class="theme_bolder">our works</span>
+        </h2>
+      </div>
+    </div>
+  </div>
+  <div class="more_works" *ngFor="let a of articleList | slice:0:8">
+    <div class="imgDiv">
+      <a href="/article/{{a.$key}}">
+        <img class="image" src="{{a.url}}">
+      </a>
+    </div>
+  </div>
+</section>
+<app-mail></app-mail>
+
+<app-footer></app-footer>
