@@ -1,0 +1,11 @@
+@media only screen and (max-width: 767px) {
+  .carousel-inner>.item>a>img,
+  .carousel-inner>.item>img,
+  .img-responsive,
+  .thumbnail a>img,
+  .thumbnail>img {
+      display: block;
+      max-width: 60%;
+      height: auto
+  }
+}

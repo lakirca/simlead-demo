@@ -13,16 +13,16 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav pull-right">
         <li>
-          <a routerLink="">Home</a>
+          <a (click)="goTo('home')">Home</a>
         </li>
         <li>
-          <a routerLink="">Features</a>
+          <a (click)="goTo('core_features')">Features</a>
         </li>
         <li>
-          <a routerLink="">Portfolio</a>
+          <a (click)="goTo('articles')">Portfolio</a>
         </li>
         <li>
-          <a routerLink="">Testimonials</a>
+          <a (click)="goTo('our_clients')">Testimonials</a>
         </li>
         <li>
           <a href="#contactus">Contact us</a>
@@ -40,8 +40,8 @@
       <div class="row portfolio-info">
         <div class="col-md-6 col-sm-12">
           <div class="custom-single-thumbnail-img">
-            <div class="overlay" [routerLink]="['/our_work', articleUrl]">
-              <img class="overlayImg" width="485" height="270" src="{{article?.url}}" />
+            <div class="overlay" >
+              <img id="myImg" class="overlayImg" src="{{article?.url}} " />
               <div class="custom-single-thumbnail-img-hover">
                 <a data-lightbox="group-unique" class="img-preview" alt="Preview" title="Preview">
                 </a>
@@ -54,11 +54,11 @@
             <h1>{{article?.title}} </h1>
           </div>
           <div class="website">
-            {{article?.website}} </div>
+            {{article?.website}}</div>
           <div class="skills">
-            {{article?.skills}} </div>
+            {{article?.skills}}</div>
           <div class="entry-content" style="word-wrap:break-word;">
-            <p>{{article?.body}} </p>
+            <p>{{article?.body}}</p>
           </div>
         </div>
       </div>
@@ -70,7 +70,7 @@
 <br>
 <br>
 <!-- Post section ends -->
-<section id="portfolio-more-works" id="home" class="hidden-xs">
+<section id="portfolio-more-works" >
   <div class="container">
     <div class="row">
       <div class="title">
@@ -80,14 +80,32 @@
       </div>
     </div>
   </div>
-  <div class="more_works" *ngFor="let a of articleList | slice:0:8">
-    <div class="imgDiv">
-      <a href="/article/{{a.$key}}">
-        <img class="image" src="{{a.url}}">
-      </a>
+  <div class="row custom">
+      <div class="portfolio-list-item col-md-3 col-sm-6 col-xs-6 work" *ngFor="let article of articleList  | slice:0:8">
+        <div class="overlay"></div>
+        <div class="work-content">
+            <div class="articleDiv">
+              <a (click)="change(article.$key)">
+                <img class="image" src="{{article.url}}">
+              </a>
+            </div>
+      </div>
     </div>
   </div>
 </section>
 <app-mail></app-mail>
 
 <app-footer></app-footer>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>

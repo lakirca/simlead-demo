@@ -223,7 +223,7 @@ h5 {
 }
 .valign_wrapper {
     display: -webkit-flex;
-    display: flex;
+    display: contents;
     align-items: center;
 }
 .owl-dots .owl-dot {

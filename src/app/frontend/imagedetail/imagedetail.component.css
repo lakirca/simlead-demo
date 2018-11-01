@@ -4,11 +4,18 @@
   padding-bottom: 100px;
   background: #0b0b0b;
   opacity: 0.9;
+  position: fixed;
+  align-items: center;
 }
+
+.text-center {
+  margin-top: 200px;
+}
+
 .imgDiv {
   margin: 0 auto;
-  width: 600px;
-  height: 680px;
+  /*width: 600px;*/
+  /*height: 680px;*/
 }
 .img-container {
   height: 680px;
@@ -22,6 +29,10 @@
 .close {
   background-color: transparent;
   border: transparent;
-  margin:20px 30% 20px 0;
+  margin:20px 2% 20px 0;
   color: white;
+}
+
+img {
+  width: 75%;
 }

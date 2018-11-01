@@ -27,10 +27,15 @@ export class OurWorkComponent implements OnInit {
     private articleService: PageService,
     private db: AngularFireDatabase,
     private router: ActivatedRoute
-  ) {}
+  ) {
+    window.scroll(0, 0)
+
+  }
 
   // On init push all articles to ArticleList
   ngOnInit() {
+    window.scroll(0, 0)
+
     this.getArticles();
   }
 

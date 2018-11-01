@@ -21,14 +21,17 @@
     "@angular/platform-browser-dynamic": "^6.0.3",
     "@angular/router": "^6.0.7",
     "angularfire2": "5.0.0-rc.3",
+    "classlist.js": "^1.1.20150312",
     "core-js": "^2.5.4",
     "firebase": "4.6.1",
     "firebase-admin": "^5.12.1",
-    "firebase-functions": "^1.1.0",
+    "firebase-functions": "^2.0.5",
+    "ng-recaptcha": "^4.0.0",
     "ngx-toastr": "^8.0.0",
     "nodemailer": "^4.6.7",
     "rxjs": "^6.0.0",
     "rxjs-compat": "^6.2.1",
+    "web-animations-js": "^2.3.1",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {

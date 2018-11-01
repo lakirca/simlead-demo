@@ -1,9 +1,11 @@
 <div class="wrapper">
   <button class="close" (click)="backClicked()">X</button>
-  <div class="imgDiv">
-    <div class=col-md-12>
-      <div [ngStyle]="{'background-image':'url('+ imageUrl +')'}" class="img-container">
-      </div>
+  <!--<div class="imgDiv">-->
+    <!--<div class=col-md-12>-->
+      <!--<div [ngStyle]="{'background-image':'url('+ imageUrl +')'}" class="img-container">-->
+      <!--</div>-->
+  <div class="text-center">
+      <img src="{{imageUrl}}" class="rounded mx-auto d-block" alt="...">
     </div>
-  </div>
+  <!--</div>-->
 </div>

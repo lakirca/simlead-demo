@@ -1,4 +1,6 @@
-import { Routes } from "@angular/router";
+import { NgModule }             from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+
 import { LoginComponent } from "./login/login.component";
 import { AuthenticationGuard } from "./services/authenticationGuard.service";
 import { ArticlesComponent } from "./articles/articles.component";
@@ -11,26 +13,7 @@ import { NotFoundComponent } from "./frontend/not-found/not-found.component";
 import { OurWorkComponent } from "./frontend/our-work/our-work.component";
 import { ImagedetailComponent } from "./frontend/imagedetail/imagedetail.component";
 
-export const appRoutes: Routes = [
-  // Login Route
-  { path: "login", component: LoginComponent },
-  // Frontend Route
-  {
-    path: "article",
-    component: ArticleComponent
-  },
-  {
-    path: "our_work/:id",
-    component: ImagedetailComponent
-  },
-  {
-    path: "article/:id",
-    component: ShowArticleComponent
-  },
-  {
-    path: "our_work",
-    component: OurWorkComponent
-  },
+export const routes: Routes = [
   // Backend routes
   {
     path: "articles",
@@ -49,6 +32,33 @@ export const appRoutes: Routes = [
   },
   // Home Route
   { path: "", component: HomeComponent },
+  // Login Route
+  { path: "login", component: LoginComponent },
+  // Frontend Routes
+  {
+    path: "article",
+    redirectTo: "our_work",
+    pathMatch: "full",
+    // component: ArticleComponent
+  },
+  {
+    path: "our_work/:id",
+    component: ImagedetailComponent
+  },
+  {
+    path: "article/:id",
+    component: ShowArticleComponent
+  },
+  {
+    path: "our_work",
+    component: OurWorkComponent
+  },
   // Not Found Route
   { path: "**", component: NotFoundComponent }
 ];
+
+@NgModule({
+  imports: [ RouterModule.forRoot(routes) ],
+  exports: [ RouterModule ]
+})
+export class AppRoutingModule {}

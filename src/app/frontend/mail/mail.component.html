@@ -28,6 +28,9 @@
               <textarea class="form-control" type="text" id="form32" required class="form-control" ngModel name="content" mdbActive></textarea>
             </div>
           </div>
+          <div class= "col-sm-12 text-center mb30">
+            <re-captcha  (resolved)="resolved($event)" siteKey="6Lc7XHQUAAAAAPnO89hC_vnNVhT-x9gTtwTSXj3D"></re-captcha>
+          </div>
           <div class="row" style="color: white">
             <div class="col-sm-12 text-center mb30">
               <button class="btn theme_btn" type="submit">Send Message</button>
@@ -37,4 +40,11 @@
       </div>
     </div>
   </div>
+  <!--<input placeholder="key" [(ngModel)] = 'key'>-->
+  <!--<input placeholder="url" [(ngModel)] = 'url'>-->
+  <!--<input placeholder="body" [(ngModel)] = 'body'>-->
+  <!--<input placeholder="skills" [(ngModel)] = 'skills'>-->
+  <!--<input placeholder="website" [(ngModel)] = 'website'>-->
+  <!--<input placeholder="title" [(ngModel)] = 'title'>-->
+  <!--<button (click)="writeData()">write database</button>-->
 </section>

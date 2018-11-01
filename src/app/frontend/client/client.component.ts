@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Renderer2 } from "@angular/core";
 
 @Component({
   selector: "app-client",
@@ -6,9 +6,21 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./client.component.css"]
 })
 export class ClientComponent implements OnInit {
-  constructor() {}
+  constructor(
+    private renderer: Renderer2,
+  ) {
+    this.addJsToElement('../../../assets/js/owl.carousel.min.js');
+  }
 
   ngOnInit() {}
+  
+  addJsToElement(src: string): HTMLScriptElement {
+    const script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = src;
+    this.renderer.appendChild(document.body, script);
+    return script;
+  }
 
   client1 = {
     name: "ALEX CHAMKIN",
@@ -30,4 +42,10 @@ export class ClientComponent implements OnInit {
       " Simlead team were solely responsible for the maintenance and extension of our existing PHP eCommerce application built on a custom framework. Team worked on both the front end and back end of the website, proving themselves an expert in HTML, CSS, JavaScript, and PHP.",
     title: "CEO, Impact Nutraceuticals LLC"
   };
+
+  client4 = {
+    name: "Kim Chivhima",
+    body: "I am happy to recommend you the high quality of developing and leadership work for Alexey and Simlead team for ZipCoin projects. We are one of the leading and cutting edge technology out of Canada and USA using Epic Operating System (EOS) for our blockchain technology projects. Within a short period of time Alexey was able to build a high respective developers to work on our project.  Amazing technical capabilities and truly enjoy working with him. He  actually cares about the  product and contribution to the organization. Communication and transparency  is never an issue. The team he built for our project and quality of work they put out there is great.  They really work with you on what you need. ZipCoin is extremely satisfied with the piece of work and his team's ongoing contribution to our EOS blockchain project.",
+    title: "ZipCoin CEO"
+    }
 }

@@ -114,18 +114,19 @@ export class EditComponent implements OnInit {
     });
   }
 
+  getArticle(key: string) {
+    return fb
+    .database()
+    .ref("articles/" + key)
+    .once("value")
+    .then(snap => snap.val());
+  }
+  
   getData() {
     this.articleList = this.firebase.list("articles");
     return this.articleList;
   }
-  getArticle(key: string) {
-    return fb
-      .database()
-      .ref("articles/" + key)
-      .once("value")
-      .then(snap => snap.val());
-  }
-
+  
   updateArticle(article: Article) {
     this.articleList.update(this.articleUrl, {
       title: article.title,

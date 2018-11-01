@@ -675,7 +675,7 @@ header {
 }
 
 .work>img {
-  width: 100%;
+  /*width: 100%;*/
 }
 
 .work .overlay {
@@ -1568,6 +1568,7 @@ header {
   .blog-comments .media .media {
       margin:0px -15px;
   }
+
 }
 
 

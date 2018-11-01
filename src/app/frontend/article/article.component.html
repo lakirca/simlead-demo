@@ -2,21 +2,21 @@
   <!-- Container -->
   <div class="container">
     <!-- Row -->
-    <div class="row">
+    <!--<div class="row">-->
       <!-- Section header -->
       <div class="row">
         <div class="title">
-          <h2 class="text-center">RESPONSIVE
-            <span class="white_bolder" style="color: #00cdac">DESIGN</span>
+          <h2 class="text-center">OUR
+            <span class="white_bolder" style="color: #00cdac">BEST WORKS</span>
           </h2>
-        </div>
+        <!--</div>-->
       </div>
       <!-- /Section header -->
       <!-- Work -->
-      <div class="row">
+      <div class="row custom">
         <div class="row portfolio-list ">
-          <div class="col-md-4 col-xs-6 work" *ngFor="let article of articleList  | slice:0:9">
-            <img class="img-responsive" src="{{article.url}}">
+          <div class="portfolio-list-item col-md-4 col-sm-6 col-12 work" *ngFor="let article of articleList  | slice:0:9">
+            <img class="img-responsive" src="{{article.url}}" >
             <div class="overlay"></div>
             <div class="work-content">
               <span>{{article.skills}}</span>
@@ -31,8 +31,10 @@
         </div>
       </div>
       <!-- /Work -->
-      <div class="button-div">
-        <a class="main-btn" (click)="moreOfOurWork()">See More of Our Work</a>
+      <div class="row">
+        <div class="button-div">
+          <a class="main-btn" (click)="moreOfOurWork()">See More of Our Work</a>
+        </div>
       </div>
       <!-- /Row -->
     </div>

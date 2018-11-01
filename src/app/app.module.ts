@@ -9,7 +9,7 @@ import { ToastrModule } from "ngx-toastr";
 
 // Router and Routes import
 import { RouterModule } from "@angular/router";
-import { appRoutes } from "./app.routes";
+import { AppRoutingModule } from "./app-routing.module";
 
 // Angular Firebase import
 import { AngularFireDatabase } from "angularfire2/database-deprecated";
@@ -41,7 +41,6 @@ import { ShowArticleComponent } from "./frontend/show-article/show-article.compo
 import { OurWorkComponent } from "./frontend/our-work/our-work.component";
 import { NotFoundComponent } from "./frontend/not-found/not-found.component";
 import { ImagedetailComponent } from "./frontend/imagedetail/imagedetail.component";
-
 // Services import
 import { CustomService } from "./articles/custom.service";
 import { ImageService } from "./services/image.service";
@@ -49,6 +48,7 @@ import { UploadService } from "./services/upload.service";
 import { AuthenticationGuard } from "./services/authenticationGuard.service";
 import { AuthenticationService } from "./services/authentication.service";
 import { PageService } from "./services/page.service";
+import { RecaptchaModule } from 'ng-recaptcha';
 
 @NgModule({
   declarations: [
@@ -73,7 +73,8 @@ import { PageService } from "./services/page.service";
     ShowArticleComponent,
     OurWorkComponent,
     NotFoundComponent,
-    ImagedetailComponent
+    ImagedetailComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -82,11 +83,12 @@ import { PageService } from "./services/page.service";
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes),
+    AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    RecaptchaModule.forRoot()
   ],
   providers: [
     AuthenticationGuard,
@@ -95,7 +97,7 @@ import { PageService } from "./services/page.service";
     AngularFireDatabase,
     UploadService,
     CustomService,
-    PageService
+    PageService,
   ],
   bootstrap: [AppComponent]
 })
